@@ -1,11 +1,19 @@
 {
   "name": "protractor-take-screenshots-on-demand",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Protractor take screenshots on demand  makes screenshot in any place where it is needed",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "keywords": [
+    "protractor",
+    "screenshot",
+    "screenshots",
+    "angular",
+    "e2e",
+    "selenium"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/molot1989/protractor-take-screenshots-on-demand.git"
