@@ -4,7 +4,7 @@ Protractor take screenshots on demand  makes screenshot in any place where it is
 #Usage 
 The protractor-take-screenshots-on-demand is available via npm:
 
-$ npm install protractor-take-screenshots-on-demand --save-dev
+<code>$ npm install protractor-take-screenshots-on-demand </code>
 
 
 In your Protractor configuration file, register protractor-take-screenshots-on-demand 
