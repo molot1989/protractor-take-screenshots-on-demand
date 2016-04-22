@@ -1,6 +1,6 @@
 {
   "name": "protractor-take-screenshots-on-demand",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Protractor take screenshots on demand  makes screenshot in any place where it is needed",
   "main": "index.js",
   "scripts": {
