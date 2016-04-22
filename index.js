@@ -21,7 +21,6 @@ module.exports  = {
             var stream = fs.createWriteStream(directory + '/' + filename);
             stream.write(new Buffer(data, 'base64'));
             stream.end();
-            console.log(a)
         }
         browser.takeScreenshot().then(function (png) {
             browser.getCapabilities().then(function (capabilities) {
