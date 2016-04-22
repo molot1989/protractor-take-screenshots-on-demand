@@ -1,0 +1,19 @@
+{
+  "name": "protractor-take-screenshots-on-demand",
+  "version": "1.0.0",
+  "description": "take screenshots on demand",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/molot1989/protractor-take-screenshots-on-demand.git"
+  },
+  "author": "Roman Brovchenko <molot1989@ya.ru>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/molot1989/protractor-take-screenshots-on-demand/issues"
+  },
+  "homepage": "https://github.com/molot1989/protractor-take-screenshots-on-demand#readme"
+}
