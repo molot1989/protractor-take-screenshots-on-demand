@@ -24,8 +24,7 @@ module.exports  = {
         }
         browser.takeScreenshot().then(function (png) {
             browser.getCapabilities().then(function (capabilities) {
-                var browserName = capabilities.caps_.browserName,
-                    filename = browserName + ' - ' + name + '.png';
+                var filename =  name + '.png';
                 writeScreenShot(png, filename);
             });
         });
