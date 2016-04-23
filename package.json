@@ -23,8 +23,8 @@
   "bugs": {
     "url": "https://github.com/molot1989/protractor-take-screenshots-on-demand/issues"
   },
-  "dependencies": {
-    "mkdirp": "^0.5.0",
-  },
-  "homepage": "https://github.com/molot1989/protractor-take-screenshots-on-demand#readme"
+  "homepage": "https://github.com/molot1989/protractor-take-screenshots-on-demand#readme",
+  "devDependencies": {
+    "mkdirp": "^0.5.1"
+  }
 }
