@@ -8,9 +8,10 @@ module.exports  = {
     screenShotDirectory:  '',
 
     createDirectory: function () {
-        mkdirp(this.screenShotDirectory, function(err) {
+        var directory = this.screenShotDirectory;
+        mkdirp(directory, function(err) {
             if(err) {
-                console.log('Could not create directory ' + this.screenShotDirectory);
+                console.log('Could not create directory ' + directory);
             }
         });
     },
