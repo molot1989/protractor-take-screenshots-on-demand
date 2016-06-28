@@ -12,6 +12,7 @@ module.exports  = {
         mkdirp(directory, function(err) {
             if(err) {
                 console.log('Could not create directory ' + directory);
+                throw err;
             }
         });
     },
