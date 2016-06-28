@@ -27,8 +27,8 @@ module.exports  = {
             stream.write(new Buffer(data, 'base64'));
             stream.end();
         }
-        browser.takeScreenshot().then(function (png) {
-            browser.getCapabilities().then(function (capabilities) {
+        return browser.takeScreenshot().then(function (png) {
+            return browser.getCapabilities().then(function (capabilities) {
                 var browserName = capabilities.get('browserName'),
                     filename = browserName + ' - ' + name + '.png';
                 writeScreenShot(png, filename);
