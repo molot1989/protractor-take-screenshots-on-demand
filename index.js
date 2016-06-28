@@ -1,4 +1,5 @@
 var fs = require('fs');
+var path = require('path');
 var mkdirp = require('mkdirp');
 
 
@@ -18,7 +19,7 @@ module.exports  = {
         var directory = this.screenShotDirectory;
         function writeScreenShot (data, filename) {
             fs.existsSync(directory);
-            var stream = fs.createWriteStream(directory + '/' + filename);
+            var stream = fs.createWriteStream(path.join(directory, filename));
             stream.write(new Buffer(data, 'base64'));
             stream.end();
         }
