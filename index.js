@@ -18,7 +18,9 @@ module.exports  = {
     takeScreenshot: function (name) {
         var directory = this.screenShotDirectory;
         function writeScreenShot (data, filename) {
-            fs.existsSync(directory);
+            if (!fs.existsSync(directory)) {
+                throw new Error('Directory does not exist ' + directory);
+            }
             var stream = fs.createWriteStream(path.join(directory, filename));
             stream.write(new Buffer(data, 'base64'));
             stream.end();
