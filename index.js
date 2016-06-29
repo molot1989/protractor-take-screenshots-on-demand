@@ -7,6 +7,8 @@ module.exports  = {
 
     screenShotDirectory:  '',
 
+    browserNameJoiner: ' - ',
+
     createDirectory: function () {
         var directory = this.screenShotDirectory;
         mkdirp(directory, function(err) {
@@ -19,6 +21,7 @@ module.exports  = {
 
     takeScreenshot: function (name) {
         var directory = this.screenShotDirectory;
+        var joiner = this.browserNameJoiner;
         function writeScreenShot (data, filename) {
             if (!fs.existsSync(directory)) {
                 throw new Error('Directory does not exist ' + directory);
@@ -30,7 +33,7 @@ module.exports  = {
         return browser.takeScreenshot().then(function (png) {
             return browser.getCapabilities().then(function (capabilities) {
                 var browserName = capabilities.get('browserName'),
-                    filename = browserName + ' - ' + name + '.png';
+                    filename = browserName + joiner + name + '.png';
                 writeScreenShot(png, filename);
             });
         });
