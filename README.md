@@ -19,6 +19,8 @@ exports.config = {
 
    // Assign the test reporter to each running instance
    onPrepare: function() {
+      //joiner between browser name and file name
+      screenshots.browserNameJoiner = ' - '; //this is the default
       //folder of screenshots
       screenshots.screenShotDirectory = 'target/screenshots';
       //creates folder of screenshots
